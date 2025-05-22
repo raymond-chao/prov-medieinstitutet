@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <script src="https://kit.fontawesome.com/aafa7cdabb.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+<body>
+    <header class="navigation">
+        <a href="../index.html"><img class="img__logo" src="../img/logo.webp" alt="logo"></a>
+        <div class="navbar" id="myNavbar">
+            <nav class="navbar__container">
+                <ul>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card__text">
+                        <h1 class="card__title">Om <span class="highlight">Mitt Zoo</span></h1>
+                        <p class="card__paragraph since"><span class="highlight">Since:</span> 1999</p>
+                        <p class="card__paragraph">Mitt zoo är en plats fylld med spännande djur och lärorika upplevelser. 
+                            Här möter du allt från lejon och giraffer till pandor och ugglor, var och en med sin unika personlighet. Vi strävar efter att skapa en trygg och 
+                            naturlig miljö för djuren, samtidigt som våra besökare får lära sig mer om djurens liv, beteenden och livsmiljöer. Välkommen till en plats där äventyr 
+                            och kunskap möts!</p>
+                            <div class="card__button">
+                            <a href="../pages/contact.html"><button class="btn btn__read-more">Kontakta oss</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-main">
+        <div class="footer-main__container">
+            <div class="footer-main__socials">
+                <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#pintrest"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("myNavbar");
+            if (burger.className === "navbar") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

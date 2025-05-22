@@ -3,9 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/aafa7cdabb.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <title>Zoo</title>
 </head>
 <body>
-    
+    <header class="navigation">
+        <a href="index.html"><img class="img__logo" src="img/logo.webp" alt="logo"></a>
+        <div class="navbar" id="myNavbar">
+            <nav class="navbar__container">
+                <ul>
+                    <li><a href="pages/about.html">Om</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+    <main>
+        <section class="left-section">
+            <div class="left-container">
+                <form class="left-search" action="#search">
+                    <div class="left-search__container">
+                        <label for="search" class="label">search</label>
+                        <input type="search" name="search" id="search" class="input-field" placeholder="Search Animal" required>
+                        <div class="left-search__button">
+                            <button type="submit" class="btn btn__form">SEARCH <span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Conny</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Lejon</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Lejon har högt uppsatta mål och nöjer sig inte med medelmåtta</p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/lejon.jpg" alt="Lejon">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Dez</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Babian</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> De är mycket sociala djur och lever i grupper, och de har utvecklat en komplex kommunikationsstil. </p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/babian.jpg" alt="Babian">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Ray</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Räv</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Denna räv gillar chips</p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/räv.jpg" alt="Räv">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Mräd</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Giraff</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Giraffer sover djupt endast några minuter per dygn. Då vecklar de in benen under kroppen och lägger halsen på ryggen</p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/giraff.jpg" alt="Giraff">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Herr</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Uggla</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> De är väl anpassade till att jaga i mörkret och har utmärkta hörsel och syn. </p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/uggla.jpg" alt="Uggla">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Kamo</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Kamel</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Kamelernas "pucklar" inte innehåller vatten, utan fett som de kan använda som energi när de är utan mat eller vatten.</p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/kamel.jpg" alt="Kamel">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Manda</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Panda</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Pandan är en björn som klättrar och simmar bra. Den väger uppåt 100 kg och blir ca 1,5 m lång.</p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/panda.jpg" alt="Panda">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__text">
+                        <h3 class="card__title">Murris</h3>
+                        <p class="card__paragraph"><span class="highlight">Typ:</span> Tiger</p>
+                        <p class="card__paragraph"><span class="highlight">Beskrivning:</span> Tigrar är kraftfulla jägare med vassa tänder, starka käkar och smidiga kroppar </p>
+                        <div class="card__button">
+                            <a href="pages/about.html"><button class="btn btn__read-more">Läs mer</button></a>
+                        </div>
+                    </div>
+                    <div class="card__image-container">
+                        <img class="card__img" src="img/tiger.jpg" alt="Tiger">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-main">
+        <div class="footer-main__container">
+            <div class="footer-main__socials">
+                <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#pintrest"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("myNavbar");
+            if (burger.className === "navbar") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "navbar";
+            }
+        }
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
